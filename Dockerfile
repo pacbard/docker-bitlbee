@@ -1,9 +1,9 @@
 FROM buildpack-deps:stretch-curl
-LABEL maintainer="Michele Bologna <mb@michelebologna.net>"
-LABEL name="BitlBee Docker container by Michele Bologna"
-LABEL version="mb-3.5.1-20190115"
+LABEL maintainer="Emanuele Bardelli <bardellie@gmail.com>?"
+LABEL name="BitlBee Docker container originally by Michele Bologna"
+LABEL version="eb-3.6-20190208"
 
-ENV VERSION=3.5.1
+ENV VERSION=3.6
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends autoconf automake gettext gcc git libtool make dpkg-dev \
