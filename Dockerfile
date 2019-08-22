@@ -9,16 +9,16 @@ RUN apt-get update && \
 apt-get install -y --no-install-recommends autoconf automake gettext gcc git libtool make dpkg-dev \
 libglib2.0-dev libotr5-dev libpurple-dev libgnutls28-dev \
 libjson-glib-dev libprotobuf-c-dev protobuf-c-compiler \
-mercurial libgcrypt20 libgcrypt20-dev \
+libgcrypt20 libgcrypt20-dev \
 libmarkdown2-dev libwebp-dev libtool-bin && \
 cd && \
 curl -LO# https://get.bitlbee.org/src/bitlbee-$VERSION.tar.gz && \
 curl -LO# https://github.com/EionRobb/skype4pidgin/archive/1.5.tar.gz && \
 curl -LO# https://github.com/majn/telegram-purple/releases/download/v1.3.1/telegram-purple_1.3.1.orig.tar.gz && \
 curl -LO# https://github.com/bitlbee/bitlbee-facebook/archive/v1.1.2.tar.gz && \
-hg clone https://bitbucket.org/EionRobb/purple-hangouts/ && \
+git clone https://bitbucket.org/EionRobb/purple-hangouts/ && \
 git clone https://alexschroeder.ch/cgit/bitlbee-mastodon && \
-hg clone https://bitbucket.org/EionRobb/purple-rocketchat && \
+git clone https://bitbucket.org/EionRobb/purple-rocketchat && \
 curl -LO# https://github.com/sm00th/bitlbee-discord/archive/0.4.2.tar.gz && \
 git clone https://github.com/dylex/slack-libpurple.git && \
 git clone https://github.com/jgeboski/bitlbee-steam.git && \
